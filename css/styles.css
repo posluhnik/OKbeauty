@@ -2953,7 +2953,8 @@ body,
 body { background: var(--paper); }
 .site-header { background: rgba(9, 9, 9, .94); border-color: #292929; }
 .about, .contact { background: #101010; }
-.intro-strip, .values, .partners, .location-section { background: #0c0c0c; }
+.location-section { background: #171515; }
+.intro-strip, .values, .partners { background: #0c0c0c; }
 .testimonial-card, .partner-card, .contact-option, .hero-caption { background: #141414; }
 .partner-card, .contact-option, .location-map { border-color: #303030; }
 .partner-card:hover, .contact-option:hover { box-shadow: 0 18px 44px rgba(0, 0, 0, .35); }
