@@ -4366,3 +4366,36 @@ input::placeholder, textarea::placeholder { color: #89837e; }
     padding: 12px 36px 12px 14px !important;
   }
 }
+
+/* Treatment price lists: flexible names with a protected, aligned price column. */
+.treatment-list li.treatment-price-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  align-items: start;
+  column-gap: 12px;
+  padding: 11px 0 11px 15px;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.treatment-price-row > span:first-child { min-width: 0; overflow-wrap: anywhere; }
+.treatment-price {
+  white-space: nowrap;
+  color: #f5f2ef;
+  font-size: 13px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+.treatment-price .currency { color: #ff5260; }
+.treatment-subheading {
+  margin: 8px 0 2px;
+  padding: 10px 0 8px;
+  border-bottom: 1px solid rgba(255, 38, 54, .45);
+  color: #ff6974;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  line-height: 1.5;
+}
+.treatment-subheading-refill { margin-top: 15px; }
+.treatment-info .treatment-list + .treatment-subheading { margin-top: 12px; }
